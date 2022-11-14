@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas na prática</title>
+    <style>
+        /* box-level*/
+        h1 {
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkolivegreen;
+
+            border: 10px solid darkolivegreen; /* Jeito simplificado */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px; /* Caso todos forem iguais, se não */
+
+            padding: 10px 20px 10px 20px; /* Você usa assim, primeiro top, right, bottom e left */
+
+            padding: 10px 20px; /* E quando fica assim, é porque usou o primeiro para top e bottom e o segundo para right e left*/
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            margin: 20px; /* Caso todos forem iguais, se não */
+
+            margin: 20px 20px 40px 20px; /* Você usa assim, primeiro top, right, bottom e left */
+
+            margin: 20px 10px; /* E quando fica assim, é porque usou o primeiro para top e bottom e o segundo para right e left*/
+
+            margin: 20px auto; /* E quando fica assim, é porque usou o primeiro para top e bottom 20px e o segundo para right e left automatico*/
+
+            margin: auto; /* Caso queira que a caixa fica ao meio da tela, com responsividade usa o auto */
+
+
+            outline-width: 5px;
+            outline-style: dashed;
+            color: salmon;
+
+            outline: 10px dashed salmon; /* Jeito simplificado */
+
+        }
+        /* inline-level */
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

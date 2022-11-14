@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos em CSS</title>
+
+    <style>
+
+        /*
+        #   =   id
+        .   =   class
+        :   =   pseudo-class
+        ::  =   pseudo-element
+        >   =   clildren (filho)
+        */
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited { /*Assim que você visitar o link, ele ficara de outra cor dos demais*/
+            color: cornflowerblue;
+        }
+        a:hover { /*Assim que você passar o mouse em cima do link, ele ficara de outra cor dos demais*/
+            color: black;
+            text-decoration: underline;
+        }
+        a:active { /*Assim que você clicar no link, ele ficara de outra cor dos demais*/
+            color: yellow;
+        }
+        a::before {
+            content: '->';
+        }
+        
+        a::after {
+            content: '<-';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a target="_blank" href="https://github.com/antrindade">Repositorio GitHub</a></li>
+        <li><a target="_blank" href="www.youtube.com/alantrindade/">Canal youtube</a></li>
+        <li><a target="_blank" href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/">Site do curso em video</a></li>
+    </ul>
+</body>
+</html>

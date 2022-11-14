@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags em HTML5</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0;
+    }
+    header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    nav {
+        background-color: rgb(102, 102, 102);
+        padding: 3px;
+        box-shadow: 5px 5px 10px 1px black;
+        box-shadow: inset 5px 5px 10px 1px black;
+    }
+    nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin: 30px;
+    }
+    nav > a:hover {
+        text-decoration: underline;
+        color: aqua;
+    }
+    article{
+        background-color: white;
+    }
+    article > aside {
+        background-color: gray;
+    }
+    main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px 0px;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 10px;
+    }
+    footer > p {
+        margin: 0;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae distinctio veritatis animi
+                    accusamus enim perferendis laboriosam soluta magni, deleniti doloremque saepe, quae aspernatur cum,
+                    explicabo amet? Cum reiciendis veniam quasi ducimus quam explicabo. Atque eos quisquam, recusandae
+                    deserunt adipisci maiores voluptates architecto quos similique saepe blanditiis dolor consequatur
+                    modi.</p>
+                <aside>
+                    <p>Artigo escrito por José da silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo Trindade</p>
+    </footer>
+</body>
+
+</html>
